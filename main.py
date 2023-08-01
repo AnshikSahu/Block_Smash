@@ -1,3 +1,4 @@
+import asyncio
 import pygame
 pygame.init()
 screen = pygame.display.set_mode((640, 480))
@@ -319,7 +320,7 @@ def lost_game():
         t+=1
     exit()
         
-main()
+asyncio.run(main())
 
 # pygame.init()
 
